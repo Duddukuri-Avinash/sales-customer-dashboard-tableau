@@ -1,7 +1,7 @@
 [README.md](https://github.com/user-attachments/files/28928884/README.md)
 # 📊 Sales & Customer Dashboard | Tableau
 
-> An interactive Tableau project featuring two connected dashboards built to help **sales managers** and **marketing teams** analyze sales performance and understand customer behavior — with year-over-year comparisons for 2023 vs 2022.
+> An interactive Tableau project featuring two connected dashboards built to help **sales managers** and **marketing teams** analyze sales performance and understand customer behavior — with **dynamic year selection** for flexible year-over-year analysis.
 
 ---
 
@@ -12,6 +12,19 @@
 
 ### 👥 Customer Dashboard
 ![Customer Dashboard](customer_dashboard.png)
+
+---
+
+## ✨ Key Features
+
+| Feature | Details |
+|---|---|
+| 🗓️ **Dynamic Year Filter** | Select any year to instantly update all KPIs, charts and trends across both dashboards |
+| 🔗 **Interconnected Dashboards** | Filters applied on one dashboard reflect on the other automatically |
+| 📊 **Year-over-Year Comparison** | Automatically compares selected year vs previous year for every metric |
+| 🔵🔴 **Highest & Lowest Highlights** | Months with highest and lowest values are highlighted automatically |
+| ⬆️⬇️ **Above/Below Average** | Weekly trends highlight weeks above and below average |
+| 🏛️ **Navigation Icons** | Switch between Sales and Customer dashboards using top-right icons |
 
 ---
 
@@ -61,32 +74,33 @@ sales-and-customer-dashboard-tableau/
 ## 📋 Dashboard 1 — Sales Dashboard
 
 ### Purpose
-To present an overview of sales metrics and trends in order to analyze **year-over-year performance** and understand sales trends.
+To present an overview of sales metrics and trends in order to analyze **year-over-year performance** and understand sales trends for any selected year.
 
-### 📊 KPIs (2023 vs 2022)
-| Metric | 2023 Value | Growth |
+### 📊 KPIs (Dynamic — updates based on selected year)
+| Metric | Example: 2023 | Growth vs PY |
 |---|---|---|
-| **Total Sales** | $733K | ▲ 20.4% vs PY |
-| **Total Profit** | $93K | ▲ 14.2% vs PY |
-| **Total Quantity** | $12K | ▲ 26.8% vs PY |
+| **Total Sales** | $733K | ▲ 20.4% |
+| **Total Profit** | $93K | ▲ 14.2% |
+| **Total Quantity** | $12K | ▲ 26.8% |
 
 ### Key Requirements
 
 **📌 KPI Overview**
-- Display total sales, profit, and quantity for current year vs previous year
+- Display total sales, profit and quantity for the selected year vs previous year
+- Automatically updates when a different year is selected
 
 **📈 Sales Trends**
-- Monthly KPI data for current and previous year
-- Highlight months with highest (🔵) and lowest (🔴) sales
+- Monthly KPI data for selected year and previous year
+- Highlights months with highest (🔵) and lowest (🔴) sales automatically
 
 **🏷️ Product Subcategory Comparison**
-- Compare sales & profit across all product subcategories (Phones, Chairs, Binders, etc.)
-- Bar-in-Bar chart showing 2023 Sales vs 2022 Sales
+- Compare sales & profit across all product subcategories
+- Bar-in-Bar chart showing selected year vs previous year sales
 
 **📅 Weekly Sales & Profit Trends**
-- Weekly sales and profit for current year
-- Average reference line (Avg. $14K Sales / Avg. $2K Profit)
-- Highlight weeks above and below average
+- Weekly sales and profit for selected year
+- Average reference line displayed automatically
+- Highlights weeks above and below average
 
 ### Charts Used
 | Chart | Purpose |
@@ -100,50 +114,47 @@ To present an overview of sales metrics and trends in order to analyze **year-ov
 ## 📋 Dashboard 2 — Customer Dashboard
 
 ### Purpose
-To provide an overview of customer data, trends, and behaviors — helping marketing teams understand **customer segments** and improve customer satisfaction.
+To provide an overview of customer data, trends and behaviors for any selected year — helping marketing teams understand **customer segments** and improve customer satisfaction.
 
-### 📊 KPIs (2023 vs 2022)
-| Metric | 2023 Value | Growth |
+### 📊 KPIs (Dynamic — updates based on selected year)
+| Metric | Example: 2023 | Growth vs PY |
 |---|---|---|
-| **Total Customers** | 693 | ▲ 8.6% vs PY |
-| **Total Sales per Customer** | $1,058 | ▲ 10.8% vs PY |
-| **Total Orders** | 1,687 | ▲ 28.3% vs PY |
+| **Total Customers** | 693 | ▲ 8.6% |
+| **Total Sales per Customer** | $1,058 | ▲ 10.8% |
+| **Total Orders** | 1,687 | ▲ 28.3% |
 
 ### Key Requirements
 
 **📌 KPI Overview**
-- Display total customers, sales per customer, and total orders for current year vs previous year
+- Display total customers, sales per customer and total orders for selected year vs previous year
 
 **📈 Customer Trends**
-- Monthly KPI data for current and previous year
-- Highlight months with highest (🔵) and lowest (🔴) values
+- Monthly KPI data for selected year and previous year
+- Highlights months with highest (🔵) and lowest (🔴) values
 
 **🗂️ Customer Distribution by Number of Orders**
-- Bar chart showing how many customers placed 1, 2, 3, 4, 5+ orders
-- Provides insight into customer loyalty and engagement
+- Shows how customers are distributed by number of orders placed
+- Updates dynamically based on selected year
 
 **🏆 Top 10 Customers by Profit**
-
-| Rank | Customer | Last Order | 2023 Profit | 2023 Sales | # Orders |
-|---|---|---|---|---|---|
-| #1 | Raymond Buch | 25/09/2023 | $6,781 | $14,203 | 3 |
-| #2 | Hunter Lopez | 17/11/2023 | $5,046 | $10,523 | 2 |
-| #3 | Tom Ashbrook | 22/10/2023 | $4,599 | $13,723 | 2 |
-| #4 | Andy Reiter | 24/12/2023 | $2,608 | $5,821 | 2 |
-| #5 | Jane Waco | 18/11/2023 | $1,953 | $5,385 | 4 |
+- Top 10 customers for the selected year ranked by profit
+- Shows Rank, Last Order Date, Sales, Profit and Number of Orders
 
 ### Charts Used
 | Chart | Purpose |
 |---|---|
 | **Sparkline** | Monthly customer KPI trends |
 | **Bar Chart** | Customer distribution by order count |
-| **Table** | Top 10 customers by profit |
+| **Data Table** | Top 10 customers by profit |
 
 ---
 
 ## 🔗 Dashboard Interactivity
 
-Both dashboards are **fully interconnected** — navigate between Sales and Customer dashboards using the icons in the top right corner. Filters applied on one dashboard reflect across both for seamless analysis.
+- Both dashboards are **fully interconnected**
+- **Select any year** from the filter to update all metrics across both dashboards instantly
+- Navigate between dashboards using the **icons in the top right corner**
+- All charts, KPIs and trends update **automatically** based on the selected year
 
 ---
 
@@ -153,14 +164,14 @@ Both dashboards are **fully interconnected** — navigate between Sales and Cust
 |---|---|
 | `Customers.csv` | Customer names, IDs and segments |
 | `Location.csv` | Region, state and country data |
-| `Orders.csv` | Order transactions, dates and sales |
+| `Orders.csv` | Order transactions, dates, sales and profit |
 | `Products.csv` | Product categories and subcategories |
 
 ---
 
-## ✨ Key Insights
+## 💡 Key Insights (2023)
 
-- 📈 Sales grew by **20.4%** in 2023 compared to 2022
+- 📈 Sales grew by **20.4%** compared to 2022
 - 👥 Customer base expanded by **8.6%** year over year
 - 📦 Total orders surged by **28.3%** — strongest growth metric
 - 🏆 **Raymond Buch** is the most profitable customer with $6,781 profit
