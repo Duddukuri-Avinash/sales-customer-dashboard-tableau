@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/28928884/README.md)
 # 📊 Sales & Customer Dashboard | Tableau
 
 > An interactive Tableau project featuring two connected dashboards built to help **sales managers** and **marketing teams** analyze sales performance and understand customer behavior — with **dynamic year selection** for flexible year-over-year analysis.
