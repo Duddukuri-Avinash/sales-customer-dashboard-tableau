@@ -8,10 +8,10 @@
 ## 🖼️ Dashboard Previews
 
 ### 📈 Sales Dashboard
-![Sales Dashboard](sales_dashboard.png)
+<img width="1920" height="1080" alt="sales_dashboard" src="https://github.com/user-attachments/assets/0f8aa69b-f156-4a8f-9b6a-f8fd09b16d9c" />
 
 ### 👥 Customer Dashboard
-![Customer Dashboard](customer_dashboard.png)
+<img width="1920" height="1080" alt="customer_dashboard" src="https://github.com/user-attachments/assets/7f9be49c-ce54-4c06-a0b8-54819aff8924" />
 
 ---
 
